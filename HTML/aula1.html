@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Aula 1</title>
+</head>
+
+
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div class="navbar-container">
+                <div class="navbar-left">
+                    <a href="index.html" class="navbar-logo">
+                        <img src="./ASSETS/IMG/logo.png" alt="Logo" class="logo-svg"> 
+                    </a>
+                </div>
+                <div class="navbar-center">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="./HTML/conteudo.html">Conteúdos</a>
+                    <a href="./HTML/contato.html">Contato</a>
+                </div>
+                <!-- Botão de Menu para dispositivos móveis -->
+                <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+            </div>
+        </nav>
+    
+        <!-- Sidebar Mobile -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+            </div>
+            <div class="sidebar-links">
+                <a href="index.html">Home</a>
+                <a href="./HTML/conteudo.html">Conteúdos</a>
+                <a href="./HTML/contato.html">Contato</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="aula">
+        <h2>Aula 1: Introdução ao Banco de Dados</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="downloads">
+          <a href="assets/pdfs/aula1.pdf" download>Baixar Conteúdo</a>
+          <a href="assets/pdfs/exercicios-aula1.pdf" download>Baixar Exercícios</a>
+        </div>
+        <div class="quiz">
+          <h3>Quiz</h3>
+          <p>Pergunta 1: O que é um banco de dados?</p>
+          <button onclick="mostrarResposta()">Mostrar Resposta</button>
+          <p id="resposta" style="display: none;">Um banco de dados é uma coleção organizada de dados.</p>
+        </div>
+      </section>
+
+</body>
+</html>

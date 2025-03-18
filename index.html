@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Reforço BD</title>
+</head>
+<body>
+    
+    <header>
+        <nav id="navbar">
+            <div class="navbar-container">
+                <div class="navbar-left">
+                    <a href="index.html" class="navbar-logo">
+                        <img src="./ASSETS/IMG/logo.png" alt="Logo" class="logo-svg"> 
+                    </a>
+                </div>
+                <div class="navbar-center">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="./HTML/conteudo.html">Conteúdos</a>
+                    <a href="./HTML/contato.html">Contato</a>
+                </div>
+                <!-- Botão de Menu para dispositivos móveis -->
+                <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+            </div>
+        </nav>
+    
+        <!-- Sidebar Mobile -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+            </div>
+            <div class="sidebar-links">
+                <a href="index.html">Home</a>
+                <a href="./HTML/conteudo.html">Conteúdos</a>
+                <a href="./HTML/contato.html">Contato</a>
+            </div>
+        </div>
+    </header>
+      
+      
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <img src="./ASSETS/IMG/pc.gif" alt="GIF de Computador" class="hero-gif">
+            </div>
+            <div class="hero-right">
+                <h1 class="typing">Bem-vindo ao Reforço de Banco de Dados!</h1>
+                <p>Olá, este é o Reforço de Banco de Dados da UNICID.  
+                   Eu sei que não é o lugar que você gostaria de passar seu tempo livre.  
+                   Mas quero te dizer que acreditamos no seu potencial para aprender e evoluir. Banco de Dados pode parecer desafiador, mas com dedicação e prática, você verá que é totalmente capaz de dominar os conceitos e aplicá-los com confiança.  
+              
+                   Nosso objetivo é oferecer o suporte necessário para que você fortaleça seu conhecimento e desenvolva habilidades essenciais para sua formação. Aproveite os materiais, os exercícios e o acompanhamento disponível.  
+                </p>
+            </div>
+        </div>
+    </section>
+    
+        
+        <!-- Container de partículas -->
+        <div id="particles-js"></div>
+    </section>
+
+  <section class="aulas">
+    <h2>Aulas Disponíveis</h2>
+    <div class="aula-grid">
+      <a href="./HTML/aula1.html" class="aula-card">
+        <h3>Aula 1: Introdução ao Banco de Dados</h3>
+        <p>Conceitos básicos e modelagem de Dados.</p>
+      </a>
+      <a href="aulas/aula2.html" class="aula-card">
+        <h3>Aula 2: Modelagem de Dados</h3>
+        <p>Entenda como modelar um banco de dados.</p>
+      </a>
+      <a href="aulas/aula3.html" class="aula-card">
+        <h3>Aula 3: SQL Básico</h3>
+        <p>Aprenda a manipular dados com SQL.</p>
+      </a>
+      <a href="aulas/aula4.html" class="aula-card">
+        <h3>Aula 4: Normalização</h3>
+        <p>Domine as formas normais de banco de dados.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Reforço de Banco de Dados - Por Alice Farias</p>
+    <p>Coordenação dos Cursos de Tecnologia da UNICID - Profª Tatiana</p>
+  </footer>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('Partículas carregadas');
+    });
+</script>
+    <script src="./JS/script.js"></script>
+</body>
+</html>

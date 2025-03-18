@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Conteúdo BD</title>
+</head>
+
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div class="navbar-container">
+                <div class="navbar-left">
+                    <a href="index.html" class="navbar-logo">
+                        <img src="./ASSETS/IMG/logo.png" alt="Logo" class="logo-svg"> 
+                    </a>
+                </div>
+                <div class="navbar-center">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="./HTML/conteudo.html">Conteúdos</a>
+                    <a href="./HTML/contato.html">Contato</a>
+                </div>
+                <!-- Botão de Menu para dispositivos móveis -->
+                <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+            </div>
+        </nav>
+    
+        <!-- Sidebar Mobile -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+            </div>
+            <div class="sidebar-links">
+                <a href="index.html">Home</a>
+                <a href="./HTML/conteudo.html">Conteúdos</a>
+                <a href="./HTML/contato.html">Contato</a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="conteudo">
+        <h2>Conteúdos Complementares</h2>
+        <div class="conteudo-lista">
+          <a href="aulas/aula1.html" class="conteudo-card">
+            <h3>Aula 1: Introdução ao Banco de Dados</h3>
+            <p>Materiais e exercícios disponíveis.</p>
+          </a>
+          <!-- Repita para outras aulas -->
+        </div>
+      </section>
+
+</body>
+</html>
