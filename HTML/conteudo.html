@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdos sobre Banco de Dados</title>
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Contatos</title>
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
     <header>
         <nav id="navbar">
             <div class="navbar-container">
@@ -18,27 +19,97 @@
                     </a>
                 </div>
                 <div class="navbar-center">
-                    <a href="../index.html" class="active">Home</a>
-                    <a href="./conteudo.html">Conteúdos</a>
+                    <a href="../index.html">Home</a>
+                    <a href="./conteudo.html" class="active">Conteúdos</a>
                     <a href="./contato.html">Contato</a>
                 </div>
                 <!-- Botão de Menu para dispositivos móveis -->
                 <button class="menu-btn" onclick="toggleSidebar()">☰</button>
             </div>
         </nav>
-    
-        <!-- Sidebar Mobile -->
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <button class="close-btn" onclick="toggleSidebar()">&times;</button>
-            </div>
-            <div class="sidebar-links">
-                <a href="../index.html">Home</a>
-                <a href="./conteudo.html">Conteúdos</a>
-                <a href="./contato.html">Contato</a>
-            </div>
-        </div>
     </header>
+
+    <main class="conteudo-container">
+        <!-- Seção de Vídeos -->
+        <section id="videos" class="conteudo-section">
+            <h2 class="section-title"><i class="fas fa-video"></i> Vídeos</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <iframe src="https://www.youtube.com/watch?v=SEnnucNP1h0" title="Curso Modelagem de Dados e SQL | Guia Para Iniciantes" frameborder="0" allowfullscreen></iframe>
+                    <h3>Curso Modelagem de Dados e SQL</h3>
+                    <p>Guia Para Iniciantes</p>
+                </div>
+                <div class="card">
+                    <iframe src="https://www.youtube.com/watch?v=XQkf-6Yl3WM" title="Curso de SQL e MySQL fundamental " frameborder="0" allowfullscreen></iframe>
+                    <h3>Curso de SQL e MySQL fundamental</h3>
+                    <p>Conceitos básicos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de PDFs -->
+        <section id="pdfs" class="conteudo-section">
+            <h2 class="section-title"><i class="fas fa-file-pdf"></i> Materiais em PDF</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <a href="../ASSETS/IMG/PDF/Introdução a Modelagem de Dados.pdf" download>
+                        <i class="fas fa-download"></i>
+                        <h3>Introdução a Modelagem de dados</h3>
+                        <p>Clique para baixar o PDF automaticamente.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="../ASSETS/IMG/PDF/Apostila SQL.pdf" download>
+                        <i class="fas fa-download"></i>
+                        <h3>Apostila SQL - USP</h3>
+                        <p>Clique para baixar o PDF automaticamente.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Exercícios -->
+        <section id="exercicios" class="conteudo-section">
+            <h2 class="section-title"><i class="fas fa-pencil-alt"></i> Exercícios</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <a href="https://www.hackerrank.com/domains/tutorials/10-days-of-sql" target="_blank">
+                        <i class="fas fa-code"></i>
+                        <h3>Exercícios de SQL</h3>
+                        <p>Pratique suas habilidades em SQL.</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.exercises.com/modeling" target="_blank">
+                        <i class="fas fa-database"></i>
+                        <h3>Exercícios de Modelagem</h3>
+                        <p>Desafios de modelagem de dados.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção do Quiz -->
+        <section id="quiz" class="conteudo-section">
+            <h2 class="section-title"><i class="fas fa-question-circle"></i> Quiz</h2>
+            <div class="quiz-card">
+                <p>Teste seus conhecimentos sobre banco de dados com nosso quiz interativo!</p>
+                <a href="quiz.html" class="quiz-button">Ir para o Quiz</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sidebar Mobile -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="close-btn" onclick="toggleSidebar()">&times;</button>
+        </div>
+        <div class="sidebar-links">
+            <a href="../index.html">Home</a>
+            <a href="./conteudo.html">Conteúdos</a>
+            <a href="./contato.html">Contato</a>
+        </div>
+    </div>
 
     <footer class="site-footer">
         <div class="footer-content">
@@ -63,8 +134,13 @@
             <p>&copy; 2025 Todos os direitos reservados.</p>
         </div>
     </footer>
-    
-    
 
+    <script>
+        // Função para abrir/fechar o sidebar em dispositivos móveis
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
